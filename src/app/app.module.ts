@@ -13,6 +13,7 @@ import { GmapComponent } from './gmap/gmap.component';
 import { HttpModule } from '@angular/http';
 //import { routing }    from './app.routing';
 import { AppRoutingModule } from './app-routing.module';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 import { AgmCoreModule } from '@agm/core';
 import { ContactusComponent } from './contactus/contactus.component';
@@ -38,7 +39,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     }),
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
