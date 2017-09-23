@@ -1,0 +1,34 @@
+.navbar {
+    background-color: #f7911e;
+    margin-bottom: 0;
+}
+/* f21b23 ee6134 f7911e 5C5C5C */
+.navbar-brand {
+    color: black;
+    
+}
+.navbar-nav a, span{
+    color: black;
+    font-weight: 700;
+    padding-top: 15px;
+}
+ a{
+    color: black;
+    font-weight: 700;
+}
+.nav-brand {
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+    vertical-align: middle;
+    margin-top: 15px;
+}
+
+li.nav-item > a:active,
+li.nav-item > a:hover, 
+li.nav-item > a:focus {
+    background-color: #f21b23;
+}
+.navbar-default .navbar-nav > .active > a:hover{
+    color: yellow;
+}
