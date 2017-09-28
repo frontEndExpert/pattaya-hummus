@@ -39,7 +39,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     }),
     AppRoutingModule,
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+// providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],

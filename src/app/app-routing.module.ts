@@ -9,7 +9,7 @@ const routes: Routes = [
     { path: '', component: BodyComponent },
     { path: 'contactus', component: ContactusComponent },
     { path: 'gallery', component: GalleryComponent },
-    { path: '**', redirectTo: '' },
+    { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({

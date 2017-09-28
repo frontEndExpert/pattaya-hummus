@@ -1,6 +1,6 @@
 .navbar {
     background-color: #f7911e;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 /* f21b23 ee6134 f7911e 5C5C5C */
 .navbar-brand {
@@ -10,7 +10,8 @@
 .navbar-nav a, span{
     color: black;
     font-weight: 700;
-    padding-top: 15px;
+    font-size: 18px;
+    /*padding-top: 15px;*/
 }
  a{
     color: black;
@@ -20,8 +21,8 @@
     color: black;
     font-weight: 700;
     font-size: 24px;
-    vertical-align: middle;
-    margin-top: 15px;
+    /* vertical-align: middle;
+    margin-top: 15px; */
 }
 
 li.nav-item > a:active,
