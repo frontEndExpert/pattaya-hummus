@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "compile_@agm_core": "babel node_modules/@agm/core -d node_modules/@agm/core --presets es2015",
+    "prestart": "ng build --prod && ngc",
+    "start": "ts-node src/server.ts",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -23,6 +25,7 @@
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/platform-server": "^4.4.4",
     "@angular/router": "^4.2.4",
+    "app-module-path": "^2.2.0",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.4.1",
     "jquery": "^3.2.1",
