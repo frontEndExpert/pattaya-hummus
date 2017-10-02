@@ -11,7 +11,6 @@ import { MenuComponent } from './menu/menu.component';
 import { GmapComponent } from './gmap/gmap.component';
 
 import { HttpModule } from '@angular/http';
-//import { routing }    from './app.routing';
 import { AppRoutingModule } from './app-routing.module';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
@@ -31,7 +30,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     GalleryComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'pattaya-hummus'}),
     FormsModule,
     HttpModule,
     AgmCoreModule.forRoot({
@@ -43,4 +42,3 @@ import { GalleryComponent } from './gallery/gallery.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-// providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
