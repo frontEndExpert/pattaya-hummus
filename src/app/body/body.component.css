@@ -5,20 +5,13 @@
    font-size: 16pt;
 }
 
-.img-col{
-    text-align: center;
-    align-items: center;
-}
 .mid-col {
     text-align: right;
 }
 
 .right-col {
-    height: auto;
-    text-align: left;
-    color: black;
-    font-size: 16pt;
- }
+ text-align: center;
+}
 
 .carousel-inner img {
     width: 100%; /* Set width to 100% */
